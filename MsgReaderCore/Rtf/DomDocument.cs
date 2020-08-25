@@ -3670,7 +3670,7 @@ namespace MsgReader.Rtf
 									        break;
 
                                         case "u":
-                                            stringBuilder.Append(HttpUtility.UrlDecode("*", _defaultEncoding));
+                                            stringBuilder.Append(System.Web.HttpUtility.UrlDecode("*", _defaultEncoding));
                                             break;
                                     }
                                 }

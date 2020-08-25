@@ -41,15 +41,17 @@ namespace MsgReader.Outlook
         /// <returns></returns>
         public static string ConvertRtfToHtml(string rtf)
         {
-            if (string.IsNullOrEmpty(rtf))
-                return string.Empty;
+            return "Funktion ConvertRtfToHtml; nicht ausgebaut. 2020; Sebastian Rauer";
 
-            //var encoding = Encoding.ASCII;
-            //var bytes = encoding.GetBytes(rtf);
-            //rtf = encoding.GetString(bytes);
+            //if (string.IsNullOrEmpty(rtf))
+            //    return string.Empty;
 
-            var html = RtfPipe.Rtf.ToHtml(rtf.Trim('\0'));
-            return html;
+            ////var encoding = Encoding.ASCII;
+            ////var bytes = encoding.GetBytes(rtf);
+            ////rtf = encoding.GetString(bytes);
+
+            ////var html = RtfPipe.Rtf.ToHtml(rtf.Trim('\0'));
+            ////return html;
         }
         #endregion
     }

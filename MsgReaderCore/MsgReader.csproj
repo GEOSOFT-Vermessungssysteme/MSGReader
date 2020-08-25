@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net472</TargetFrameworks>
     <RootNamespace>MsgReader</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>3.7.28</Version>
-    <AssemblyVersion>3.7.28.0</AssemblyVersion>
+    <Version>20.8.24.1</Version>
+    <AssemblyVersion>20.8.24.1</AssemblyVersion>
     <Authors>Kees van Spelde</Authors>
     <Company>Magic-Sessions</Company>
     <Copyright>(c)2013-2020 - Kees van Spelde</Copyright>
@@ -23,7 +23,7 @@ The EML reader supports MIME 1.0 encoded files</Description>
     <PackageReleaseNotes>- Fix bug where HTML was not extracted from RTF anymore</PackageReleaseNotes>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>MSGReader.snk</AssemblyOriginatorKeyFile>
-    <FileVersion>3.7.28.0</FileVersion>
+    <FileVersion>20.8.24.1</FileVersion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>Outlook-icon.png</PackageIcon>
   </PropertyGroup>
@@ -58,20 +58,18 @@ The EML reader supports MIME 1.0 encoded files</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenMcdf" Version="2.2.1.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="RtfPipe">
-      <HintPath>..\..\RtfPipe\RtfPipe\bin\Release\net45\RtfPipe.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Outlook-icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenMcdf">
+      <HintPath>..\..\openmcdf\bin\Release\OpenMcdf\net40\OpenMcdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
   </ItemGroup>
 
 </Project>
