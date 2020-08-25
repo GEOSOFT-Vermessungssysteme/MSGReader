@@ -20,7 +20,9 @@
 The MSGReader supports MSG E-Mail (also signed), Contact, Appointment, Task, Sticky notes and Contact files.
 
 The EML reader supports MIME 1.0 encoded files</Description>
-    <PackageReleaseNotes>- Fix bug where HTML was not extracted from RTF anymore</PackageReleaseNotes>
+    <PackageReleaseNotes>GEOSOFT Verson ; weil Probleme mit Abhänghigkeiten OpenMCDF bestanden.
+Daher beide Projekte selber kopiliert und verlikgt
+Sebastian</PackageReleaseNotes>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>MSGReader.snk</AssemblyOriginatorKeyFile>
     <FileVersion>20.8.24.1</FileVersion>
